@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PIERRO | Americana en français</title>
+<meta name="description" content="PIERRO, auteur-compositeur-interprète Americana et country-folk. Écoutez sa musique et découvrez ses spectacles.">
+<meta name="theme-color" content="#121212">
+<meta property="og:title" content="PIERRO | Americana en français">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#accueil">PIERRO</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu">
+    <a href="#musique">Musique</a>
+    <a href="#spectacles">Spectacles</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#promo">Écouter</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="hero-inner">
+      <h1>PIERRO</h1>
+      <p class="tagline" id="tagline"></p>
+      <div class="actions">
+        <a class="btn primary" href="#promo">Écouter Balles de plomb</a>
+        <a class="btn ghost" href="#spectacles">Voir les spectacles</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="musique">
+    <h2>Musique</h2>
+    <p class="intro">Les dernières sorties, à écouter sur toutes les plateformes.</p>
+    <div class="releases" id="releases"></div>
+  </section>
+
+  <section class="section alt" id="spectacles">
+    <h2>Spectacles</h2>
+    <ul class="shows" id="shows"></ul>
+  </section>
+
+  <section class="section" id="galerie">
+    <h2>Galerie</h2>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section class="section promo" id="promo">
+    <figure id="promo-cover"></figure>
+    <div>
+      <h2>Écoutez Balles de plomb</h2>
+      <p class="intro">Disponible partout. Choisissez votre plateforme.</p>
+      <div class="actions" data-platforms></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="contact">
+  <div>
+    <h2>Booking et presse</h2>
+    <a class="mail" id="mail" href="#"></a>
+  </div>
+  <div class="socials" id="socials"></div>
+  <p class="copy">© <span id="year"></span> PIERRO. Tous droits réservés.</p>
+</footer>
+
+<dialog id="lightbox" aria-label="Photo agrandie"><img alt=""></dialog>
+
+<script src="data/config.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
