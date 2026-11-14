@@ -9,9 +9,12 @@
     n.append(...kids);
     return n;
   };
+  const EXTS = [".jpg", ".JPG", ".jpeg", ".png", ".PNG", ".webp"];
   const pic = (p, alt) => {
+    const base = p.replace(/\.[^.]+$/, "");
+    const tries = EXTS.map(e => base + e).filter(x => x !== p);
     const i = el("img", { src: url(p), alt, loading: "lazy" });
-    i.addEventListener("error", () => { i.style.visibility = "hidden"; });
+    i.addEventListener("error", () => { const n = tries.shift(); if (n) i.src = url(n); else i.style.visibility = "hidden"; });
     return i;
   };
 
@@ -38,7 +41,7 @@
   const dlg = $("#lightbox"), big = dlg.querySelector("img");
   S.gallery.forEach(g => {
     const b = el("button", { type: "button", "aria-label": "Agrandir la photo" }, pic(g.image, g.alt));
-    b.addEventListener("click", () => { big.src = url(g.image); big.alt = g.alt; dlg.showModal(); });
+    b.addEventListener("click", () => { big.src = b.querySelector("img").src; big.alt = g.alt; dlg.showModal(); });
     $("#gallery").append(b);
   });
   dlg.addEventListener("click", () => dlg.close());

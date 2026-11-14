@@ -15,24 +15,24 @@ window.SITE = {
   },
 
   images: {
-    hero: "images/SPOTIFY - bannerv67.jpg",
-    profile: "images/SPOTIFY PROFILE PIC.jpg"
+    hero: "SPOTIFY - bannerv67.jpg",
+    profile: "SPOTIFY PROFILE PIC.png"
   },
 
   // Chaque sortie peut avoir son propre lien "url" (sinon : page Spotify de l’artiste).
   releases: [
-    { title: "Balles de plomb", image: "images/Offical released COVER - Balles de plomb - compressd.jpg", alt: "Pochette de Balles de plomb", url: "" },
-    { title: "Rouge ou gris", image: "images/RG-3000X3000.jpg", alt: "Pochette de Rouge ou gris", url: "" },
-    { title: "10K écoutes", image: "images/10K streams.jpg", alt: "Visuel des 10 000 écoutes", url: "" }
+    { title: "Balles de plomb", image: "Offical released COVER - Balles de plomb - compressd.jpg", alt: "Pochette de Balles de plomb", url: "" },
+    { title: "Rouge ou gris", image: "RG-3000X3000.png", alt: "Pochette de Rouge ou gris", url: "" },
+    { title: "10K écoutes", image: "10K streams.jpg", alt: "Visuel des 10 000 écoutes", url: "" }
   ],
 
-  promo: { image: "images/Offical released COVER - Balles de plomb - compressd.jpg", alt: "Pochette de Balles de plomb" },
+  promo: { image: "Offical released COVER - Balles de plomb - compressd.jpg", alt: "Pochette de Balles de plomb" },
 
   gallery: [
-    { image: "images/IMG_1686.jpg", alt: "PIERRO sur scène" },
-    { image: "images/IMG_1675.jpg", alt: "PIERRO en spectacle" },
-    { image: "images/IMG_1689.jpg", alt: "PIERRO en concert" },
-    { image: "images/IMG_1676.jpg", alt: "PIERRO en répétition" }
+    { image: "IMG_1686.JPG", alt: "PIERRO sur scène" },
+    { image: "IMG_1675.JPG", alt: "PIERRO en spectacle" },
+    { image: "IMG_1680.JPG", alt: "PIERRO en concert" },
+    { image: "IMG_1676.JPG", alt: "PIERRO en répétition" }
   ],
 
   // Exemple : { date: "2026-12-05", dateLabel: "5 décembre 2026", venue: "Salle X", city: "Montréal", tickets: "https://..." }
